@@ -9,7 +9,7 @@ const backgroundColor = 255; //kinda self-explanatory
 const strokeAlpha = 10; //the alpha of the lines (lower numbers are more transparent)
 const strokeColor = 0; //the line color
 
-const fontSampleFactor = 0.8; //How many points there are: the higher the number, the closer together they are (more detail)
+const fontSampleFactor = 0.6; //How many points there are: the higher the number, the closer together they are (more detail)
 
 const noiseZoom = 0.006; //how zoomed in the perlin noise is
 const noiseOctaves = 4; //The number of octaves for the noise
