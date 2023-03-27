@@ -86,22 +86,13 @@ function windowResized() {
 	updateStartingPoints();
 
 }
+
 function updateStartingPoints() {
-  let centerX = width / 2;
-  let centerY = height / 2;
+	startingPoints = font.textToPoints(string, width / 2 - textWidth(string) / 2, height / 2, size, { "sampleFactor": fontSampleFactor });
 
-  startingPoints = font.textToPoints(
-    string,
-    centerX - textWidth(string) / 2,
-    centerY + size / 3, // Adjust the vertical position
-    size,
-    { sampleFactor: fontSampleFactor }
-  );
-
-  points = [];
-  for (let p = 0; p < startingPoints.length; p++) {
-    points[p] = startingPoints[p];
-    points[p].zOffset = random();
-  }
+	points = [];
+	for (let p = 0; p < startingPoints.length; p++) {
+		points[p] = startingPoints[p];
+		points[p].zOffset = random();
+	}
 }
-
