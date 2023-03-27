@@ -18,7 +18,7 @@ const noiseFalloff = 0.5; //The falloff for the noise layers
 const zOffsetChange = 0; //How much the noise field changes in the z direction each frame
 const individualZOffset = 0; //how far away the points/lines are from each other in the z noise axies (the bigger the number, the more chaotic)
 
-const lineSpeed = 1.9; //the maximum amount each point can move each frame
+const lineSpeed = 1; //the maximum amount each point can move each frame
 
 const newPointsCount = 9; //the number of new points added when the mouse is dragged
 
@@ -30,8 +30,9 @@ function preload() {
 	font = loadFont(fontFile);
 }
 
-function setup() {
-	createCanvas(windowWidth, windowHeight);
+
+	function setup() {
+	createCanvas(windowWidth * 0.8, windowHeight * 0.8);
 	background(backgroundColor);
 	textFont(font);
 	textSize(size);
@@ -81,8 +82,9 @@ function mouseDragged() {
 }
 
 function windowResized() {
-	resizeCanvas(windowWidth, windowHeight);
+	resizeCanvas(windowWidth * 0.8, windowHeight * 0.8);
 	updateStartingPoints();
+
 }
 
 function updateStartingPoints() {
