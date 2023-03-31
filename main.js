@@ -32,7 +32,7 @@ function preload() {
 
 
 	function setup() {
-	createCanvas(windowWidth * 0.8, windowHeight * 0.8);
+	createCanvas(windowWidth, 768);//is this causing non responsive screen size?
 	background(backgroundColor);
 	textFont(font);
 	textSize(size);
