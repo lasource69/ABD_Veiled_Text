@@ -19,7 +19,7 @@ const baseSize = 120; //font base size
 const fontFile = "Muli-Black.ttf";
 const showText = true; //whether or not to have an overlay of the original text (in the background color)
 const textAlpha = 100; //the alpha of the text if displayed (low value will make it slowly fade in)
-const backgroundColor = 255; //kinda self-explanatory
+const backgroundColor = 237; //kinda self-explanatory
 const strokeAlpha = 10; //the alpha of the lines (lower numbers are more transparent)
 const strokeColor = 0; //the line color
 
