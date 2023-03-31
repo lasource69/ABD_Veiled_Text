@@ -1,3 +1,17 @@
+
+function setupCSS() {
+  const style = document.createElement('style');
+  style.innerHTML = `
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+  `;
+  document.head.appendChild(style);
+}
+
+setupCSS(); // Call the setupCSS function to apply the CSS
 // Original code by The Wizard Bear
 
 const string = "ART BASE .digital"; //words to be displayed
